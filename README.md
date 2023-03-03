@@ -5,23 +5,33 @@ Features
 
 The following are the main features of the File Upload Validator:
 
-    File Type Validation: Checks the file type using the fileinfo extension and compares the MIME type to an array of allowed MIME types.
-    Virus Scan: Performs a virus scan on the uploaded file using the ClamAV antivirus software.
-    File Hashing: Generates a hash value for the uploaded file using the SHA256 algorithm.
-    Size Limit: Checks if the uploaded file size exceeds the maximum allowed size, which is set to 2 MB.
-    File Naming Convention: Generates a unique name for the uploaded file based on its hash value and original name.
-    Logging: Logs each successful file upload to a file named "upload.log" located in the "logs" directory. The log message includes the file name, user IP address, and upload time.
+    1. File Type Validation: Checks the file type using the fileinfo extension and compares the MIME type to an array of allowed MIME types.
+
+    2. Virus Scan: Performs a virus scan on the uploaded file using the ClamAV antivirus software.
+
+    3. File Hashing: Generates a hash value for the uploaded file using the SHA256 algorithm.
+
+    4. Size Limit: Checks if the uploaded file size exceeds the maximum allowed size, which is set to 2 MB.
+
+    5. File Naming Convention: Generates a unique name for the uploaded file based on its hash value and original name.
+
+    6. Logging: Logs each successful file upload to a file named "upload.log" located in the "logs" directory. The log message includes the file name, user IP address, and upload time.
 
 ## Installation
 
 To use the File Upload Validator, follow these steps:
 
-    Make sure you have PHP and ClamAV installed on your server.
-    Clone this repository to your server.
-    Copy the contents of the "FileUploadValidator" folder to your web root directory.
-    Create a new directory named "uploads" in the same directory as the script.
-    Make sure the "logs" directory is writable by the web server.
-    Configure the allowed file types, maximum file size, and other settings in the script as needed.
+    1. Make sure you have PHP and ClamAV installed on your server.
+    
+    2. Clone this repository to your server.
+    
+    3. Copy the contents of the "FileUploadValidator" folder to your web root directory.
+    
+    4. Create a new directory named "uploads" in the same directory as the script.
+    
+    5. Make sure the "logs" directory is writable by the web server.
+    
+    6. Configure the allowed file types, maximum file size, and other settings in the script as needed.
 
 ## Usage
 
